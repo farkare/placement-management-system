@@ -13,7 +13,7 @@ app = FastAPI(title="Smart Placement Management System API")
 # Tighten to your actual frontend URL before/at deployment if you want.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://pms-frontend.vercel.app/login?returnUrl=%2Fdashboard"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
